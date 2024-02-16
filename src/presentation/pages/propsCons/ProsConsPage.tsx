@@ -5,7 +5,7 @@ import {
     TextMessageBox,
     TypingLoader,
 } from "../../components";
-import { prosConsUseCase } from "../../../core/use-cases/prosCons.use-case";
+import { prosConsUseCase } from "../../../core/use-cases";
 
 interface Messsage {
     text: string;
