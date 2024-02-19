@@ -1,5 +1,7 @@
 export { SidebarMenuItem } from "./sidebarMenuItem";
 
+export { TransitionPage } from "./transitionPage";
+
 export { GptMessage } from "./chatBubles/GptMessage";
 export { MyMessage } from "./chatBubles/MyMessage";
 export { GptOrthographyMessage } from "./chatBubles/GptOrthographyMessage";

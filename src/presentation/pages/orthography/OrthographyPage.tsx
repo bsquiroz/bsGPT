@@ -4,6 +4,7 @@ import {
     MyMessage,
     TypingLoader,
     TextMessageBox,
+    TransitionPage,
 } from "../../components";
 import { orthographyUseCase } from "../../../core/use-cases";
 import { GptOrthographyMessage } from "../../components";
@@ -61,7 +62,7 @@ export const OrthographyPage = () => {
     };
 
     return (
-        <div className="chat-container">
+        <TransitionPage>
             <div className="chat-messages">
                 <div className="grid grid-cols-12 gap-y-2">
                     <GptMessage text="Hola, escribe tu texto en español y te ayudo con las correciones" />
@@ -91,6 +92,6 @@ export const OrthographyPage = () => {
                 disableCorrections
                 placeholder="Que necesitas?"
             />
-        </div>
+        </TransitionPage>
     );
 };

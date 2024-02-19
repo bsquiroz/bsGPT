@@ -4,6 +4,7 @@ import {
     GptMessage,
     MyMessage,
     TextMessageBox,
+    TransitionPage,
     TypingLoader,
 } from "../../components";
 import { prosConsStreamGeneratorUseCase } from "../../../core/use-cases";
@@ -56,7 +57,7 @@ export const ProsConsStreamPage = () => {
     };
 
     return (
-        <div className="chat-container">
+        <TransitionPage>
             <div className="chat-messages">
                 <div className="grid grid-cols-12 gap-y-2">
                     <GptMessage text="Que deseas comparar hoy?" />
@@ -81,6 +82,6 @@ export const ProsConsStreamPage = () => {
                 disableCorrections
                 placeholder="Que necesitas?"
             />
-        </div>
+        </TransitionPage>
     );
 };

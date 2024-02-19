@@ -3,6 +3,7 @@ import {
     GptMessage,
     MyMessage,
     TextMessageBox,
+    TransitionPage,
     TypingLoader,
 } from "../../components";
 import { prosConsUseCase } from "../../../core/use-cases";
@@ -50,7 +51,7 @@ export const ProsConsPage = () => {
     };
 
     return (
-        <div className="chat-container">
+        <TransitionPage>
             <div className="chat-messages">
                 <div className="grid grid-cols-12 gap-y-2">
                     <GptMessage text="Necesitas comparar algo? bueno escribe que es lo que necesitas, te dare los mejores puntos de vista" />
@@ -75,6 +76,6 @@ export const ProsConsPage = () => {
                 disableCorrections
                 placeholder="Que necesitas?"
             />
-        </div>
+        </TransitionPage>
     );
 };
